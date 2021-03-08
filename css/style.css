@@ -1,0 +1,351 @@
+/* nama */
+@font-face{
+    font-family: 'orator';
+    src: url(../asset/font/OratorStd.otf);
+  }
+  
+  @font-face {
+    font-family: 'amalfi';
+    src: url(../asset/font/Amalfi\ Coast.ttf);
+  }
+  
+  @font-face {
+    font-family: 'christmas';
+    src: url(../asset/font/Christmas\ and\ Santona.ttf);
+  }
+  
+  @font-face {
+    font-family: 'christ';
+    src: url(../asset/font/Christina.otf);
+  }
+  
+  @font-face {
+    font-family: 'shafron';
+    src: url(../asset/font/Shaffron.ttf);
+  }
+  
+  @font-face {
+    font-family: 'bromello';
+    src: url(../asset/font/bromello-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: 'qalistha';
+    src: url(../asset/font/Qalistha.ttf);
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  
+  /* mongolian baiti kw */
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&family=Playfair+Display&display=swap');
+  /* invited */
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+  /* open invitation */
+  @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+  /* salsa */
+  @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+  /* time */
+  @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*scroll bar*/
+/* width */
+::-webkit-scrollbar{
+    width: 3px !important;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px white; 
+    border-radius: 10px;
+}
+    
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece{
+    background: white;   
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 166, 166); 
+}
+
+img{
+    pointer-events: none;  
+}
+
+.space{
+    padding-top: 10px;
+    -moz-text-stroke: .2px #000;
+    -webkit-text-stroke: .2px #000;
+}
+  
+.playfair{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
+.salsa{
+    font-family: 'Salsa', cursive;
+    font-size: 60px;
+    font-weight: 545;
+}
+
+.font-bigger{
+    font-size: 20px;
+}
+
+.font-amalfi{
+    font-family: 'amalfi' !important;
+    font-size: 25px !important;
+}
+
+.font-bromello{
+    font-family: 'bromello';
+    font-size: 200px;
+}
+
+.font-bromello1{
+    font-family: 'bromello';
+    font-size: 200px ;
+    -moz-text-stroke: .5px #000;
+    -webkit-text-stroke: .5px #000;
+}
+  
+.bold{
+    font-weight: bold;
+}
+
+#popup{
+    color: black;
+    position: fixed;
+    top: -100%;
+    width: 100vw;
+    height: 100vh;
+    background: url("../asset/image/sampul.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    visibility: hidden;
+    opacity: 1;
+    transition: 1s;
+    z-index: 10 !important;
+}
+  
+#popup.active{
+    top: 0%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.title{
+    /* padding-top: 50px; */
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.title h3{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.title h4{
+    color: white;
+    font-family: 'amalfi';
+    font-size: 50px;
+}
+
+.title a{
+    position: relative;
+    padding: 8px 200px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    font-family: 'christmas';
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px 0 10px 0;
+}
+
+title a:hover{
+    background: rgb(238, 238, 238);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;     
+}
+  
+#top{
+    width: 100vw;
+    height: 100vh;
+    background: url("../asset/image/sampul.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;    
+}
+
+.content-top{
+    width: 100vw;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 6em;
+    position: absolute;
+}
+  
+.content-top h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+}
+
+.arrum-section{
+    width: 100vw;
+    height: max-content;
+  }
+  
+  .relative-arrum{
+    position: relative;
+  }
+  
+  .arrum-section .relative-arrum img{
+    width: 100vw;
+    z-index: 0;
+  }
+  
+  .block-arrum{
+    position: absolute;
+    top: 0;
+  }
+  
+  .content-isra{ 
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0 30px 0;
+  }
+  
+  .content-isra img{
+    width: 70px !important;
+    position: relative!important;
+  }
+  
+  .content-isra p{
+    padding: 20px 250px;
+    line-height: 1px;
+  }
+  
+  .content-isra h3 b,
+  .content-isra p{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  
+  .relative-arrum .background{
+    margin-top: -40px;
+    z-index: 2 !important;
+  
+  }
+  
+  .relative-arrum .background img{
+    width: 100vw;
+    z-index: 2 !important;
+  }
+  
+  .relative-arrum .background1{
+    z-index: 1;
+  }
+  
+  .relative-arrum .background1 img{
+    width: 100vw;
+    margin-top: -160px;
+    z-index: 1;
+  }
+  
+  .arrum-section .relative-arrum .block-arrum img{
+    z-index: 2!important;
+    position: absolute;
+  }
+  
+  
+@media(max-width: 576px){
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        text-align: center;  
+        position: absolute;
+        bottom: 3em;
+    }
+
+    .title a{
+        position: relative;
+        padding: 3px 25px;
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        border: solid 1px white;
+        font-weight: lighter;
+        font-size: 18px;
+     }
+  
+    .title h3{
+      font-size: 16px;
+    }
+    
+    .title h4{
+      font-size: 25px;
+    }
+
+    .content-isra img{
+        width: 80px;
+      }
+    
+      .content-isra p{
+        padding: 20px 30px;
+      
+      }
+    
+      .content-isra h3 b,
+      .content-isra p{
+        font-size: 14px;
+        line-height: 20px;
+      }
+}
